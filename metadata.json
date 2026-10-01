@@ -1,0 +1,6 @@
+{
+  "name": "Compromisos Escuela de Líderes CEDEP Ayllu",
+  "description": "Buscador mágico y galería visual de compromisos comunitarios de los líderes y lideresas de la pasantía CEDEP Ayllu en Paruro, Cusco y Apurímac.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

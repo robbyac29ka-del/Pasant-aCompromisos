@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fraunces', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #F4ECE1;
+    background-color: #181411;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-display {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Andean Tokapu Geometric Pattern border */
+.andean-border-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #D97706 0,
+    #D97706 10px,
+    #B91C1C 10px,
+    #B91C1C 20px,
+    #059669 20px,
+    #059669 30px,
+    #0284C7 30px,
+    #0284C7 40px
+  );
+  background-size: 56px 8px;
+  background-repeat: repeat-x;
+}
+
+/* Custom woven textile pattern background with dark theme */
+.bg-andean-weave {
+  background-color: #1F1914;
+  background-image: radial-gradient(#D97706 0.75px, transparent 0.75px), radial-gradient(#B91C1C 0.75px, #1F1914 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Visible Andean scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #18130E;
+}
+::-webkit-scrollbar-thumb {
+  background: #D97706;
+  border-radius: 6px;
+  border: 2px solid #18130E;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Print styles for physical certificates and commitments */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
